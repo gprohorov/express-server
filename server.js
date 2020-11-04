@@ -11,7 +11,7 @@ console.log('Hello server');
 
 const buildUrl = (version, path) => `api/${version}/${path}`
 const ITEMS_BASE_URL = '';
-const PORT = 8081;
+const PORT = process.env.PORT || 8080;
 const server = express();
 const cors = require('cors');
 var corsOptions = {
