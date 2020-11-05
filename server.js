@@ -34,3 +34,15 @@ server.listen(PORT, () => {
    console.log(' Server started on port ' + PORT)
 });
 
+const db = require("./model");
+db.mongoose
+    .connect(db.url,
+        { useNewUrlParser: true,
+                useUnifiedTopology: true
+        })
+    .then( () => {
+        console.log(" Connectin OK")
+        })
+    .catch( err => {
+        console.log(" Failure connection :", err)
+    });
