@@ -5,8 +5,6 @@ module.exports = server => {
 
     router.get("/", items.findAll);
 
-
-
     // Retrieve a single Item with id
     router.get("/:id", items.findOne);
 
