@@ -30,6 +30,8 @@ server.get('/welcome', (req, res) =>{
     }
 );
 
+require('./route/item.routes')(server);
+
 server.listen(PORT, () => {
    console.log(' Server started on port ' + PORT)
 });
