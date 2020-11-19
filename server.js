@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import path from 'path';
 import mongoose from 'mongoose'
-// import cors from 'cors';
+//import cors from 'cors';
 
 console.log('Hello server');
 
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080;
 const server = express();
 const cors = require('cors');
 var corsOptions = {
-   origin: 'http://localhost:8081'
+   origin: 'http://localhost:4200'
 }
 
 

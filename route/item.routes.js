@@ -5,6 +5,8 @@ module.exports = server => {
 
     router.get("/", items.findAll);
 
+    router.post('/', items.create);
+
     // Retrieve a single Item with id
     router.get("/:id", items.findOne);
 
@@ -14,7 +16,7 @@ module.exports = server => {
     // Delete a Item with id
     router.delete("/:id", items.delete);
 
-    // Create a new Item
+    // Delete a new Item
     router.delete("/", items.deleteAll);
 
 
